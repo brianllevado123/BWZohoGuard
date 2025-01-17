@@ -38,7 +38,7 @@ php artisan route:clear
 
 ## Usage
 
-Endpoint:
+###Endpoint:
 This API endpoint allows you to interact with the Bitwarden API by making requests with a specified endpoint, method, and payload.
 
 ```bash
@@ -46,7 +46,7 @@ This API endpoint allows you to interact with the Bitwarden API by making reques
 ```
 
 
-Request Body:
+###Request Body:
 The request body should be a JSON object with the following properties.
 
 ```bash
@@ -55,7 +55,8 @@ The request body should be a JSON object with the following properties.
     "bw_request_method": "{string}", // The HTTP request method to use. Example: "post", "get", "put", "delete"
     "bw_request_payload": {collection}// The data to send with the request
 }
-
+```
+```bash
 {
     "bw_api_endpoint": "/object/folder",
     "bw_request_method": "post",
