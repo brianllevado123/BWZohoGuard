@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('validate.api.key')->group(function () {
+Route::prefix('api')->middleware('validate.api.key')->group(function () {
     Route::post('/bitwarden-api-request', [APIController::class, 'handleBWApiRequest']);
 });
