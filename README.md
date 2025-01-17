@@ -42,7 +42,7 @@ php artisan route:clear
 This API endpoint allows you to interact with the Bitwarden API by making requests with a specified endpoint, method, and payload.
 
 ```bash
-{domain-name}/api/bitwarden-api-request
+https://{domain-name}/api/bitwarden-api-request
 ```
 
 
