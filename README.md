@@ -29,33 +29,23 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
-```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag=":package_slug-migrations"
-php artisan migrate
+composer require brianllevado123/BWZohoGuard
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag=":package_slug-config"
+php artisan vendor:publish --tag="BWZohoGuard-config"
 ```
 
 This is the contents of the published config file:
 
 ```php
 return [
+    'api_key' => env('API_KEY', 'default_api_key'),
+    'master_password' => env('MASTER_PASSWORD', 'default_password'),
+    'bitwarden_url' => env('BITWARDEN_URL', 'http://localhost'),
 ];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag=":package_slug-views"
 ```
 
 ## Usage
@@ -63,12 +53,6 @@ php artisan vendor:publish --tag=":package_slug-views"
 ```php
 $variable = new VendorName\Skeleton();
 echo $variable->echoPhrase('Hello, VendorName!');
-```
-
-## Testing
-
-```bash
-composer test
 ```
 
 ## Changelog
