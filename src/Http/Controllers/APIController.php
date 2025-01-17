@@ -2,8 +2,8 @@
 
 namespace brianllevado123\BWZohoGuard\Http\Controllers;
 
-use Illuminate\Routing\Controller;
 use brianllevado123\BWZohoGuard\Http\Requests\APIRequest;
+use Illuminate\Routing\Controller;
 use mysql_xdevapi\Exception;
 
 class APIController extends Controller
