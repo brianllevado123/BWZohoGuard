@@ -53,7 +53,7 @@ The request body should be a JSON object with the following properties.
 {
     "bw_api_endpoint": "{string}", // The Bitwarden API endpoint to interact with. Example: "/object/folder"
     "bw_request_method": "{string}", // The HTTP request method to use. Example: "post", "get", "put", "delete"
-    "bw_request_payload": {collection}// The data to send with the request
+    "bw_request_payload": {collection} // The data to send with the request
 }
 ```
 ```bash
