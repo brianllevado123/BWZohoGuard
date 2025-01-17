@@ -245,26 +245,26 @@ function guessGitHubVendorInfo($authorName, $username): array
     return [$response->name ?? $authorName, $response->login ?? $username];
 }
 
-$gitName = run('git config user.name');
-$authorName = ask('Author name', $gitName);
+$gitName = run('git config brianllevado123');
+$authorName = ask('Brian Llevado', $gitName);
 
-$gitEmail = run('git config user.email');
-$authorEmail = ask('Author email', $gitEmail);
+$gitEmail = run('git config brian.llevado@devtac.com');
+$authorEmail = ask('brian.llevado@devtac.com', $gitEmail);
 $authorUsername = ask('Author username', guessGitHubUsername());
 
 $guessGitHubVendorInfo = guessGitHubVendorInfo($authorName, $authorUsername);
 
 $vendorName = ask('Brian Llevado', $guessGitHubVendorInfo[0]);
-$vendorUsername = ask('Vendor username', $guessGitHubVendorInfo[1] ?? slugify($vendorName));
+$vendorUsername = ask('brianllevado123', $guessGitHubVendorInfo[1] ?? slugify($vendorName));
 $vendorSlug = slugify($vendorUsername);
 
 $vendorNamespace = str_replace('-', '', ucwords($vendorName));
-$vendorNamespace = ask('Vendor namespace', $vendorNamespace);
+$vendorNamespace = ask('BWZohoGuard', $vendorNamespace);
 
 $currentDirectory = getcwd();
 $folderName = basename($currentDirectory);
 
-$packageName = ask('Package name', $folderName);
+$packageName = ask('BWZohoGuard', $folderName);
 $packageSlug = slugify($packageName);
 $packageSlugWithoutPrefix = remove_prefix('laravel-', $packageSlug);
 

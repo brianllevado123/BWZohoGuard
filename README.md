@@ -24,11 +24,45 @@ return [
 ];
 ```
 
+Add the service provider to config/app.php:
+
+```bash
+'brianllevado123\BWZohoGuard\BWZohoGuardServiceProvider::class',
+```
+
+Clear routes:
+
+```bash
+php artisan route:clear
+```
+
 ## Usage
 
-```php
-$variable = new VendorName\Skeleton();
-echo $variable->echoPhrase('Hello, VendorName!');
+Endpoint:
+This API endpoint allows you to interact with the Bitwarden API by making requests with a specified endpoint, method, and payload.
+
+```bash
+{domain-name}/api/bitwarden-api-request
+```
+
+
+Request Body:
+The request body should be a JSON object with the following properties.
+
+```bash
+{
+    "bw_api_endpoint": "{string}", // The Bitwarden API endpoint to interact with. Example: "/object/folder"
+    "bw_request_method": "{string}", // The HTTP request method to use. Example: "post", "get", "put", "delete"
+    "bw_request_payload": {collection}// The data to send with the request
+}
+
+{
+    "bw_api_endpoint": "/object/folder",
+    "bw_request_method": "post",
+    "bw_request_payload": {
+        "name": "Folder Name"
+    }
+}
 ```
 
 ## Changelog
@@ -45,7 +79,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [:author_name](https://github.com/brianllevado123)
 - [All Contributors](../../contributors)
 
 ## License
