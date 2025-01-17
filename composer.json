@@ -1,18 +1,18 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "brianllevado123/bw-zoho-guard",
+    "description": "Secures and facilitates the communication between Bitwarden and Zoho by acting as a middleware, ensuring safe and authenticated handshakes for API requests.",
     "keywords": [
-        ":vendor_name",
+        "brianllevado123",
         "laravel",
-        ":package_slug"
+        "bw-zoho-guard"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/brianllevado123/BWZohoGuard",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
-            "role": "Developer"
+            "name": "Brian Llevado",
+            "email": "brian.llevado@devtac.com",
+            "role": "Software Developer"
         }
     ],
     "require": {
