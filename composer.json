@@ -1,5 +1,6 @@
 {
     "name": "brianllevado123/bw-zoho-guard",
+    "version": "1.0.0",
     "description": "Secures and facilitates the communication between Bitwarden and Zoho by acting as a middleware, ensuring safe and authenticated handshakes for API requests.",
     "keywords": [
         "brianllevado123",
