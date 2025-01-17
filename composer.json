@@ -4,7 +4,9 @@
     "keywords": [
         "brianllevado123",
         "laravel",
-        "bw-zoho-guard"
+        "BWZohoGuard",
+        "middleware",
+        "api"
     ],
     "homepage": "https://github.com/brianllevado123/BWZohoGuard",
     "license": "MIT",
@@ -16,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.0",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^10.0||^11.0"
     },
@@ -35,14 +37,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "brianllevado123\\BWZohoGuard\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "brianllevado123\\BWZohoGuard\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -63,11 +63,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "brianllevado123\\BWZohoGuard\\BWZohoGuardServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
