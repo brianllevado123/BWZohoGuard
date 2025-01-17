@@ -8,17 +8,12 @@ use Symfony\Component\HttpFoundation\Response;
 
 class ValidateRequestHeaderAPIKey
 {
-    /**
-     * @param Request $request
-     * @param Closure $next
-     * @return Response
-     */
     public function handle(Request $request, Closure $next): Response
     {
         $apiKey = config('bitwarden.api_key');
         $requestApiKey = $request->header('x-api-key');
 
-        if (!hash_equals($requestApiKey, $apiKey)) {
+        if (! hash_equals($requestApiKey, $apiKey)) {
             return response()->json(['message' => 'Unauthorized. The provided API Key is invalid.'], Response::HTTP_UNAUTHORIZED);
         }
 

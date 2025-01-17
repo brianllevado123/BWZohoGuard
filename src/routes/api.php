@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use brianllevado123\BWZohoGuard\Http\Controllers\APIController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +17,3 @@ use brianllevado123\BWZohoGuard\Http\Controllers\APIController;
 Route::middleware('validate.api.key')->group(function () {
     Route::post('/bitwarden-api-request', [APIController::class, 'handleBWApiRequest']);
 });
-
-
