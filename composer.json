@@ -63,7 +63,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "brianllevado123\\BWZohoGuard\\BWZohoGuardServiceProvider"
+                "brianllevado123\\BWZohoGuard\\src\\BWZohoGuardServiceProvider"
             ]
         }
     },
