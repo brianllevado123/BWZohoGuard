@@ -2,12 +2,12 @@
 
 namespace brianllevado123\BWZohoGuard\Http\Controllers;
 
+use Illuminate\Routing\Controller;
 use brianllevado123\BWZohoGuard\Http\Requests\APIRequest;
 use mysql_xdevapi\Exception;
 
 class APIController extends Controller
 {
-    //    bw serve --hostname 0.0.0.0 --port 8087
     protected $masterPassword;
 
     protected $bitwardenUrl;
