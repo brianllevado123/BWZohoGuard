@@ -34,6 +34,6 @@ class BWZohoGuardServiceProvider extends ServiceProvider
         ], 'config');
 
         // Load routes file (optional if you have custom routes)
-        $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
     }
 }

@@ -254,7 +254,7 @@ $authorUsername = ask('Author username', guessGitHubUsername());
 
 $guessGitHubVendorInfo = guessGitHubVendorInfo($authorName, $authorUsername);
 
-$vendorName = ask('Vendor name', $guessGitHubVendorInfo[0]);
+$vendorName = ask('Brian Llevado', $guessGitHubVendorInfo[0]);
 $vendorUsername = ask('Vendor username', $guessGitHubVendorInfo[1] ?? slugify($vendorName));
 $vendorSlug = slugify($vendorUsername);
 
